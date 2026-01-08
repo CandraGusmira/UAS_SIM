@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="logo">
+        <img src="images/logo-bali.png" alt="Lambang Provinsi Bali">
+        <h1>PEMERINTAH PROVINSI BALI</h1>
+        <p>Nangun Sat Kerthi Loka Bali</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Peta Bali</a></li>
+            <li><a href="gedung.html">Pemerintahan</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="berita-grid.html">Berita</a></li>
+    </ul>
+    </nav>
+    <div class="slider">
+        <img src="images/gambar1.jpg" class="active">
+        <img src="images/gambar2.jpg">
+        <img src="images/gambar3.jpg">
+        <img src="images/gambar4.jpg">
+        <img src="images/gambar5.jpg">
+    </div>
+    <div class="container">
+    <h2 style="text-align:center; color:#111;">Selamat Datang di Portal Resmi Pemerintah Provinsi Bali</h2>
+
+    <h1>Berita</h1>
+
+<div class="berita-grid">
+    
+    <!-- Card Berita dengan Foto -->
+    <div class="berita-card">
+        <div class="card-label">Berita Bali</div>
+        <img src="https://akcdn.detik.net.id/community/media/visual/2025/10/31/pelatih-bali-united-johnny-jansen-saat-mengikuti-konferensi-pers-di-bali-united-training-center-gianyar-jumat-31102025-1761900362410_169.jpeg?w=700&q=90" alt="TPA Suwung">
+        <h3>Jelang Bali United Vs Arema, Johnny Jansen Tak Ingin Ulangi Kesalahan di Dipta</h3>
+    </div>
+    
+    <!-- Card Berita dengan Foto -->
+    <div class="berita-card">
+        <div class="card-label">Berita Bali</div>
+        <img src="https://akcdn.detik.net.id/community/media/visual/2024/08/03/potret-ramainya-bali-diserbu-turis-asing-1_169.jpeg?w=700&q=90" alt="Gubernur">
+        <h3>Bali Rancang Perda Pariwisata Berkualitas, Saldo Tabungan Wisman Bakal Dicek</h3>
+    </div>
+    
+    <!-- Card Berita dengan Foto + Logo -->
+    <div class="berita-card">
+        <div class="card-label">Berita Bali</div>
+        <img src="https://akcdn.detik.net.id/community/media/visual/2026/01/01/mv-ovation-of-the-seas-bersandar-di-pelabuhan-benoa-denpasar-kamis-112026-dok-pelabuhan-benoa-1767270785372_169.jpeg?w=500&q=90" alt="Libatkan 9 Instansi">
+        <h3>Ovation of the Seas, Kapal Pesiar Perdana Sandar di Pelabuhan Benoa pada 2026</h3>
+    </div>
+    
+    <!-- Card Berita Lain -->
+    <div class="berita-card">
+        <div class="card-label">Berita Nasional</div>
+        <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/01/2025/05/23/cYyawI2pBCW9ckpWZDhLijF2CKRSvUES8I9dLSj9-1-1965664184.jpg" alt="Silaknas ICMI">
+        <h3>Silaknas ICMI 2025 Dibuka di Bali, Sekda Dewa Indra Soroti Harmoni sebagai Fondasi Bangsa</h3>
+    </div>
+    <div class="berita-card">
+        <div class="card-label">Berita Nasional</div>
+        <img src="https://akcdn.detik.net.id/community/media/visual/2026/01/03/tim-sar-gabungan-melakukan-pencarian-korban-kapal-pinisi-putri-sakinah-yang-tenggelam-di-perairan-pulau-padar-taman-nasional-k-1767421085545_169.jpeg?w=700&q=90" alt="Peluncuran">
+        <h3>Basarnas Bentuk 7 Unit Pencarian Pelatih Valencia di Labuan Bajo Hari Ini</h3>
+    </div>
+</div>
+
+<h1>Pengumuman</h1>
+    <!-- Card Pengumuman Teks Polos -->
+    <div class="berita-card card-pengumuman">
+        <div class="card-label">Pengumuman</div>
+        <h3>PENGUMUMAN<br>B.21.500.15/17641//V/DISNAKER.ESDM<br>TENTANG UPAH MINIMUM<br>KOTA/KABUPATEN DAN UPAH MINIMUM SEKTORAL KOTA/KABUPATEN TAHUN 2026</h3>
+        <div class="card-logo">
+            <img src="https://www.freeiconspng.com/thumbs/garuda/garuda-pancasila-free-image-download-6.png" alt="Logo">
+        </div>
+    </div>
+
+    <!-- Card Pengumuman Lain -->
+    <div class="berita-card card-pengumuman">
+        <div class="card-label">Pengumuman</div>
+        <h3>PENGUMUMAN<br>B.21.500.15/17588//V/DISNAKER.ESDM<br>TENTANG UPAH MINIMUM PROVINSI DAN UPAH MINIMUM SEKTORAL PROVINSI BALI TAHUN 2026</h3>
+    </div>
+    <!-- Footer -->
+     </div>
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> Pemerintah Provinsi Bali. All Rights Reserved.</p>
+        <p>Alamat: Jl. Basuki Rahmat No. 1, Renon, Denpasar, Bali</p>
+        <p>Telepon: (0361) 224671 | Email: info@baliprov.go.id</p>
+    </footer>
+    <script>
+        // Simple slider JS
+        let slides = document.querySelectorAll('.slider img');
+        let current = 0;
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 5000);
+    </script>
+<!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="logo">
+        <img src="images/logo-bali.png" alt="Lambang Provinsi Bali">
+        <h1>PEMERINTAH PROVINSI BALI</h1>
+        <p>Nangun Sat Kerthi Loka Bali</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Peta Bali</a></li>
+            <li><a href="gedung.html">Pemerintahan</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="berita-grid.html">Berita</a></li>
+    </ul>
+    </nav>
+    <div class="slider">
+        <img src="images/gambar1.jpg" class="active">
+        <img src="images/gambar2.jpg">
+        <img src="images/gambar3.jpg">
+        <img src="images/gambar4.jpg">
+        <img src="images/gambar5.jpg">
+    </div>
+
+    <div class="judul">
+        <h1>Gedung Pemerintahan</h1>
+    </div>
+
+<div class="gedung-container">
+
+    <div class="gedung-item">
+        <img src="images/kantor-gubernur-bali.jpg" alt="Kantor Gubernur Bali">
+
+        <table class="gedung-table">
+            <tr>
+                <th>Nama Gedung</th>
+                <td>Kantor Gubernur Bali</td>
+            </tr>
+            <tr>
+                <th>Lokasi</th>
+                <td>Renon, Denpasar</td>
+            </tr>
+            <tr>
+                <th>Fungsi</th>
+                <td>Pusat Pemerintahan Provinsi</td>
+            </tr>
+            <tr>
+                <th>Deskripsi</th>
+                <td>
+                    Gedung utama Pemerintah Provinsi Bali yang digunakan
+                    sebagai pusat administrasi, kebijakan, dan kegiatan resmi daerah.
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="gedung-item">
+        <img src="images/dprd bali.jpg" alt="Gedung DPRD Bali">
+
+        <table class="gedung-table">
+            <tr>
+                <th>Nama Gedung</th>
+                <td>Gedung DPRD Provinsi Bali</td>
+            </tr>
+            <tr>
+                <th>Lokasi</th>
+                <td>Renon, Denpasar</td>
+            </tr>
+            <tr>
+                <th>Fungsi</th>
+                <td>Lembaga Legislatif Daerah</td>
+            </tr>
+            <tr>
+                <th>Deskripsi</th>
+                <td>
+                    Gedung tempat anggota DPRD Provinsi Bali melaksanakan
+                    rapat, sidang, dan pembahasan peraturan daerah.
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>    
+    <!-- Footer -->
+     </div>
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> Pemerintah Provinsi Bali. All Rights Reserved.</p>
+        <p>Alamat: Jl. Basuki Rahmat No. 1, Renon, Denpasar, Bali</p>
+        <p>Telepon: (0361) 224671 | Email: info@baliprov.go.id</p>
+    </footer>
+    <script>
+        // Simple slider JS
+        let slides = document.querySelectorAll('.slider img');
+        let current = 0;
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 5000);
+    </script>
+<!-- Footer -->
+</body>
+</html>
